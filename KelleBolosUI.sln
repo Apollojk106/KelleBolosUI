@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KelleBolosUI", "KelleBolosUI\KelleBolosUI.csproj", "{6610D3B4-3B78-4F6D-802D-B1A926D72273}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KelleBolosBO", "KelleBolosBO\KelleBolosBO.csproj", "{DD73C1D6-B32D-4EF3-9263-CBB526EBAC76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6610D3B4-3B78-4F6D-802D-B1A926D72273}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6610D3B4-3B78-4F6D-802D-B1A926D72273}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6610D3B4-3B78-4F6D-802D-B1A926D72273}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6610D3B4-3B78-4F6D-802D-B1A926D72273}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD73C1D6-B32D-4EF3-9263-CBB526EBAC76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD73C1D6-B32D-4EF3-9263-CBB526EBAC76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD73C1D6-B32D-4EF3-9263-CBB526EBAC76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD73C1D6-B32D-4EF3-9263-CBB526EBAC76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2147ED30-BA4A-49CE-B6BE-D7484AE08FA0}
+	EndGlobalSection
+EndGlobal
