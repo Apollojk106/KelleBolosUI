@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KelleBolosBO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,6 +35,30 @@ namespace KelleBolosUI
             Home home = new Home();
             home.Show();
             this.Close();
+        }
+
+        private void Pedido_Load(object sender, EventArgs e)
+        {
+            PedidoClass pedidoClass = new PedidoClass();
+            string[] infos = pedidoClass.RetornarInfoParaPedido().Split('|');
+
+            ArquivosTXTClass arquivosTXTClass = new ArquivosTXTClass();
+            string[] PedidoInfos = arquivosTXTClass.ler("Pedido").Split('|');
+
+            string Nome = infos[0];
+            string Telefone = infos[1];
+            lblItem.Text = PedidoInfos[0];
+            lblQuantidade.Text = PedidoInfos[1];
+        }
+
+        private void btnPedir_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTelefone_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

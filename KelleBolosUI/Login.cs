@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using KelleBolosBO;
 
 namespace KelleBolosUI
 {
@@ -24,9 +25,22 @@ namespace KelleBolosUI
 
         private void btnLogar_Click(object sender, EventArgs e)
         {
-            SplashLogado splashLogado = new SplashLogado();
-            splashLogado.Show();
-            this.Hide();
+            LoginClass loginClass = new LoginClass(txtUsuario.Text, txtSenha.Text);
+
+            string tempo = loginClass.Logar();
+
+            MessageBox.Show(tempo);
+
+            if (tempo == "Logado com sucesso!") 
+            {
+                ArquivosTXTClass arquivo = new ArquivosTXTClass();
+                arquivo.Criar("Usuario",txtUsuario.Text);
+
+                SplashLogado splashLogado = new SplashLogado();
+                splashLogado.Show();
+                this.Hide();
+            }
+            
         }
 
         private void button2_Click(object sender, EventArgs e)

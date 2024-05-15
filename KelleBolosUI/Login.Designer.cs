@@ -66,7 +66,7 @@
             this.btnEsqueceuASenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(209)))), ((int)(((byte)(203)))));
             this.btnEsqueceuASenha.FlatAppearance.BorderSize = 0;
             this.btnEsqueceuASenha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEsqueceuASenha.Location = new System.Drawing.Point(460, 359);
+            this.btnEsqueceuASenha.Location = new System.Drawing.Point(445, 359);
             this.btnEsqueceuASenha.Name = "btnEsqueceuASenha";
             this.btnEsqueceuASenha.Size = new System.Drawing.Size(118, 42);
             this.btnEsqueceuASenha.TabIndex = 4;
@@ -114,7 +114,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::KelleBolosUI.Properties.Resources.Cópia_de_Inicio;
+            this.pictureBox1.Image = global::KelleBolosUI.Properties.Resources._28;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1092, 618);

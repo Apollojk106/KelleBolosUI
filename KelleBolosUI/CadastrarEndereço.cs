@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KelleBolosBO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -45,7 +46,10 @@ namespace KelleBolosUI
 
         private void CadastrarEndereço_Load(object sender, EventArgs e)
         {
-            
+            ArquivosTXTClass arquivosTXT = new ArquivosTXTClass();
+            txtUsuario.Text = arquivosTXT.ler("Usuario");
+
+
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)
@@ -53,6 +57,18 @@ namespace KelleBolosUI
             Home home = new Home();
             home.Show();
             this.Close();
+        }
+
+        private async void btnCadastrarEndereco_Click(object sender, EventArgs e)
+        {
+            ArquivosTXTClass arquivosTXT = new ArquivosTXTClass();
+            string usuario = arquivosTXT.ler("Usuario");
+
+            CadastrarEnderecoClass cadastrar = new CadastrarEnderecoClass();
+            Task<string> temp = cadastrar.Validar(txtCEP.Text, txtBairro.Text, txtRua.Text, txtNumero.Text, txtComplemento.Text, usuario);
+            string resultado = await temp;
+
+            MessageBox.Show(resultado);
         }
     }
 }

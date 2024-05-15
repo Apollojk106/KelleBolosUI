@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KelleBolosBO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,7 +26,10 @@ namespace KelleBolosUI
         }
 
         private void btnSelecionar2_Click(object sender, EventArgs e)
-        {
+        {                 
+            PedidoClass pedidoclass = new PedidoClass();
+            pedidoclass.ArmazenarPedido($"{cbBolos.Text}",$"{BolosQuatidade.Value}");
+
             Pedido pedido = new Pedido();
             pedido.Show();
             this.Close();

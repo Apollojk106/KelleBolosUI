@@ -74,6 +74,7 @@
             this.btnCadastrar.TabStop = false;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // txtNome
             // 
@@ -132,7 +133,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::KelleBolosUI.Properties.Resources._41;
+            this.pictureBox1.Image = global::KelleBolosUI.Properties.Resources._46;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(953, 531);

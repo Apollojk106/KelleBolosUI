@@ -36,15 +36,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtNumero = new System.Windows.Forms.TextBox();
             this.txtBairro = new System.Windows.Forms.TextBox();
             this.txtRua = new System.Windows.Forms.TextBox();
             this.txtCEP = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnPerfil = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.btnPedido = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtUsuario = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnVoltar
@@ -73,6 +73,7 @@
             this.btnCadastrarEndereco.TabStop = false;
             this.btnCadastrarEndereco.Text = "Cadastrar";
             this.btnCadastrarEndereco.UseVisualStyleBackColor = false;
+            this.btnCadastrarEndereco.Click += new System.EventHandler(this.btnCadastrarEndereco_Click);
             // 
             // txtComplemento
             // 
@@ -134,52 +135,41 @@
             this.label1.TabIndex = 23;
             this.label1.Text = "CEP:";
             // 
-            // textBox4
+            // txtNumero
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(209)))), ((int)(((byte)(203)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Location = new System.Drawing.Point(604, 325);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(197, 15);
-            this.textBox4.TabIndex = 22;
+            this.txtNumero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(209)))), ((int)(((byte)(203)))));
+            this.txtNumero.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNumero.Location = new System.Drawing.Point(604, 325);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(197, 15);
+            this.txtNumero.TabIndex = 22;
             // 
             // txtBairro
             // 
             this.txtBairro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(209)))), ((int)(((byte)(203)))));
             this.txtBairro.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBairro.Location = new System.Drawing.Point(585, 262);
+            this.txtBairro.Location = new System.Drawing.Point(592, 262);
             this.txtBairro.Name = "txtBairro";
-            this.txtBairro.Size = new System.Drawing.Size(216, 15);
+            this.txtBairro.Size = new System.Drawing.Size(209, 15);
             this.txtBairro.TabIndex = 21;
             // 
             // txtRua
             // 
             this.txtRua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(209)))), ((int)(((byte)(203)))));
             this.txtRua.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRua.Location = new System.Drawing.Point(574, 203);
+            this.txtRua.Location = new System.Drawing.Point(585, 203);
             this.txtRua.Name = "txtRua";
-            this.txtRua.Size = new System.Drawing.Size(227, 15);
+            this.txtRua.Size = new System.Drawing.Size(216, 15);
             this.txtRua.TabIndex = 20;
             // 
             // txtCEP
             // 
             this.txtCEP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(209)))), ((int)(((byte)(203)))));
             this.txtCEP.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCEP.Location = new System.Drawing.Point(574, 141);
+            this.txtCEP.Location = new System.Drawing.Point(583, 141);
             this.txtCEP.Name = "txtCEP";
-            this.txtCEP.Size = new System.Drawing.Size(227, 15);
+            this.txtCEP.Size = new System.Drawing.Size(218, 15);
             this.txtCEP.TabIndex = 19;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::KelleBolosUI.Properties.Resources._42;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(953, 531);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // btnPerfil
             // 
@@ -217,13 +207,35 @@
             this.btnPedido.UseVisualStyleBackColor = false;
             this.btnPedido.Click += new System.EventHandler(this.btnPedido_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Location = new System.Drawing.Point(540, 112);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(57, 16);
+            this.label6.TabIndex = 32;
+            this.label6.Text = "Usuario:";
+            // 
+            // txtUsuario
+            // 
+            this.txtUsuario.AutoSize = true;
+            this.txtUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.txtUsuario.Location = new System.Drawing.Point(603, 112);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(16, 16);
+            this.txtUsuario.TabIndex = 33;
+            this.txtUsuario.Text = "...";
+            // 
             // CadastrarEndereço
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::KelleBolosUI.Properties.Resources._44;
+            this.BackgroundImage = global::KelleBolosUI.Properties.Resources._91;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(953, 531);
+            this.Controls.Add(this.txtUsuario);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnPedido);
             this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnPerfil);
@@ -233,27 +245,23 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.txtBairro);
             this.Controls.Add(this.txtRua);
             this.Controls.Add(this.txtCEP);
             this.Controls.Add(this.btnCadastrarEndereco);
             this.Controls.Add(this.btnVoltar);
-            this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
             this.Name = "CadastrarEndereço";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CadastrarEndereço";
             this.Load += new System.EventHandler(this.CadastrarEndereço_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Button btnCadastrarEndereco;
         private System.Windows.Forms.TextBox txtComplemento;
@@ -262,12 +270,14 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.TextBox txtRua;
         private System.Windows.Forms.TextBox txtCEP;
         private System.Windows.Forms.Button btnPerfil;
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Button btnPedido;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label txtUsuario;
     }
 }

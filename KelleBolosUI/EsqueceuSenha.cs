@@ -23,5 +23,10 @@ namespace KelleBolosUI
             login.Show();
             this.Close();
         }
+
+        private void btnEnviarCodigo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

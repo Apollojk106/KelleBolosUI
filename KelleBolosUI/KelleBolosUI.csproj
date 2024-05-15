@@ -263,5 +263,38 @@
   <ItemGroup>
     <None Include="Resources\Cópia de Inicio.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KelleBolosBO\KelleBolosBO.csproj">
+      <Project>{dd73c1d6-b32d-4ef3-9263-cbb526ebac76}</Project>
+      <Name>KelleBolosBO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagens\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagens\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagens\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagens\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagens\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagens\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagens\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagens\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagens\9.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

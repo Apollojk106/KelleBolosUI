@@ -42,10 +42,19 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtComplemento = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnHome = new System.Windows.Forms.Button();
             this.btnPerfil = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lblQuantidade = new System.Windows.Forms.Label();
+            this.lblItem = new System.Windows.Forms.Label();
+            this.cbBuscarOuEntregar = new System.Windows.Forms.ComboBox();
+            this.cbFormaDePagamento = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtDescricao = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.paia = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnPedir
@@ -60,6 +69,7 @@
             this.btnPedir.TabStop = false;
             this.btnPedir.Text = "Pedir";
             this.btnPedir.UseVisualStyleBackColor = false;
+            this.btnPedir.Click += new System.EventHandler(this.btnPedir_Click);
             // 
             // btnVoltar
             // 
@@ -189,17 +199,6 @@
             this.label6.TabIndex = 19;
             this.label6.Text = "Pedido Atual";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::KelleBolosUI.Properties.Resources._32;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(953, 531);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // btnHome
             // 
             this.btnHome.BackColor = System.Drawing.Color.Transparent;
@@ -225,13 +224,150 @@
             this.btnPerfil.UseVisualStyleBackColor = false;
             this.btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(113)))), ((int)(((byte)(102)))));
+            this.label7.Location = new System.Drawing.Point(568, 154);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 16);
+            this.label7.TabIndex = 36;
+            this.label7.Text = "Item:";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(113)))), ((int)(((byte)(102)))));
+            this.label8.Location = new System.Drawing.Point(568, 180);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(80, 16);
+            this.label8.TabIndex = 37;
+            this.label8.Text = "Quantidade:";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblQuantidade
+            // 
+            this.lblQuantidade.AutoSize = true;
+            this.lblQuantidade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(113)))), ((int)(((byte)(102)))));
+            this.lblQuantidade.Location = new System.Drawing.Point(654, 180);
+            this.lblQuantidade.Name = "lblQuantidade";
+            this.lblQuantidade.Size = new System.Drawing.Size(16, 16);
+            this.lblQuantidade.TabIndex = 41;
+            this.lblQuantidade.Text = "...";
+            this.lblQuantidade.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblItem
+            // 
+            this.lblItem.AutoSize = true;
+            this.lblItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(113)))), ((int)(((byte)(102)))));
+            this.lblItem.Location = new System.Drawing.Point(611, 154);
+            this.lblItem.Name = "lblItem";
+            this.lblItem.Size = new System.Drawing.Size(16, 16);
+            this.lblItem.TabIndex = 40;
+            this.lblItem.Text = "...";
+            this.lblItem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cbBuscarOuEntregar
+            // 
+            this.cbBuscarOuEntregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(113)))), ((int)(((byte)(102)))));
+            this.cbBuscarOuEntregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbBuscarOuEntregar.ForeColor = System.Drawing.Color.Black;
+            this.cbBuscarOuEntregar.FormattingEnabled = true;
+            this.cbBuscarOuEntregar.Items.AddRange(new object[] {
+            "Buscar",
+            "Entregar"});
+            this.cbBuscarOuEntregar.Location = new System.Drawing.Point(716, 307);
+            this.cbBuscarOuEntregar.Name = "cbBuscarOuEntregar";
+            this.cbBuscarOuEntregar.Size = new System.Drawing.Size(129, 24);
+            this.cbBuscarOuEntregar.TabIndex = 42;
+            this.cbBuscarOuEntregar.Text = "Buscar";
+            // 
+            // cbFormaDePagamento
+            // 
+            this.cbFormaDePagamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(113)))), ((int)(((byte)(102)))));
+            this.cbFormaDePagamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbFormaDePagamento.FormattingEnabled = true;
+            this.cbFormaDePagamento.Items.AddRange(new object[] {
+            "Pix",
+            "Dinheiro",
+            "Cartão"});
+            this.cbFormaDePagamento.Location = new System.Drawing.Point(716, 337);
+            this.cbFormaDePagamento.Name = "cbFormaDePagamento";
+            this.cbFormaDePagamento.Size = new System.Drawing.Size(129, 24);
+            this.cbFormaDePagamento.TabIndex = 43;
+            this.cbFormaDePagamento.Text = "Pix";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(113)))), ((int)(((byte)(102)))));
+            this.label9.Location = new System.Drawing.Point(568, 340);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(141, 16);
+            this.label9.TabIndex = 44;
+            this.label9.Text = "Forma de Pagamento:";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(113)))), ((int)(((byte)(102)))));
+            this.label10.Location = new System.Drawing.Point(568, 310);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(111, 16);
+            this.label10.TabIndex = 45;
+            this.label10.Text = "Forma de Retirar:";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtDescricao
+            // 
+            this.txtDescricao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(113)))), ((int)(((byte)(102)))));
+            this.txtDescricao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDescricao.Location = new System.Drawing.Point(570, 232);
+            this.txtDescricao.Multiline = true;
+            this.txtDescricao.Name = "txtDescricao";
+            this.txtDescricao.Size = new System.Drawing.Size(275, 46);
+            this.txtDescricao.TabIndex = 46;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(113)))), ((int)(((byte)(102)))));
+            this.label11.Location = new System.Drawing.Point(568, 204);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(246, 16);
+            this.label11.TabIndex = 47;
+            this.label11.Text = "Descrição: (Decorações ou Igredientes)";
+            // 
+            // paia
+            // 
+            this.paia.AutoSize = true;
+            this.paia.BackColor = System.Drawing.Color.Transparent;
+            this.paia.Location = new System.Drawing.Point(97, 108);
+            this.paia.Name = "paia";
+            this.paia.Size = new System.Drawing.Size(66, 16);
+            this.paia.TabIndex = 48;
+            this.paia.Text = "Endereço";
+            // 
             // Pedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::KelleBolosUI.Properties.Resources._33;
+            this.BackgroundImage = global::KelleBolosUI.Properties.Resources._82;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(953, 531);
+            this.Controls.Add(this.paia);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.txtDescricao);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.cbFormaDePagamento);
+            this.Controls.Add(this.cbBuscarOuEntregar);
+            this.Controls.Add(this.lblQuantidade);
+            this.Controls.Add(this.lblItem);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnPerfil);
             this.Controls.Add(this.label6);
@@ -248,20 +384,17 @@
             this.Controls.Add(this.txtCEP);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnPedir);
-            this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
             this.Name = "Pedido";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pedido";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.Pedido_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnPedir;
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.TextBox txtCEP;
@@ -278,5 +411,16 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Button btnPerfil;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblQuantidade;
+        private System.Windows.Forms.Label lblItem;
+        private System.Windows.Forms.ComboBox cbBuscarOuEntregar;
+        private System.Windows.Forms.ComboBox cbFormaDePagamento;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtDescricao;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label paia;
     }
 }

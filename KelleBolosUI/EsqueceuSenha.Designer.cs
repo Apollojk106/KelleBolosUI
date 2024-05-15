@@ -74,11 +74,12 @@
             this.btnEnviarCodigo.TabStop = false;
             this.btnEnviarCodigo.Text = "Enviar Codígo";
             this.btnEnviarCodigo.UseVisualStyleBackColor = false;
+            this.btnEnviarCodigo.Click += new System.EventHandler(this.btnEnviarCodigo_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::KelleBolosUI.Properties.Resources._31;
+            this.pictureBox1.Image = global::KelleBolosUI.Properties.Resources._34;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(942, 493);
